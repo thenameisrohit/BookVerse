@@ -1,0 +1,85 @@
+/* Navbar.css */
+
+/* Main navigation bar styling */
+nav {
+  position: fixed;
+  /* Fixes the navbar at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #000000, #f6ff00);
+  /* Initial gradient background */
+  color: #fff;
+  padding: 15px 0;
+  padding-left: 20px;
+  /* Adds padding to the left side */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Adds a subtle shadow below the navbar */
+  animation: changeBackground 10s infinite alternate;
+  /* Background color animation */
+}
+
+/* Animation for changing the background color */
+@keyframes changeBackground {
+  0% {
+    background-color: #2c3e50;
+    /* Initial color */
+  }
+
+  50% {
+    background-color: #dbac34;
+    /* Target color */
+  }
+
+  100% {
+    background-color: #2c3e50;
+    /* Initial color */
+  }
+}
+
+/* Styling for the unordered list in the navbar */
+nav ul {
+  list-style-type: none;
+  /* Removes default bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* Makes the list items display in a row */
+}
+
+/* Styling for each list item */
+nav ul li {
+  margin-right: 20px;
+  /* Adds space between list items */
+}
+
+/* Removes right margin for the last list item */
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Styling for the links in the list items */
+nav ul li a {
+  color: inherit;
+  /* Inherits the color from the parent element (nav) */
+  text-decoration: none;
+  /* Removes underline from the links */
+  font-weight: normal;
+  /* Ensures the font weight is normal */
+  transition: color 0.3s ease;
+  /* Adds a smooth transition effect for color changes */
+}
+
+/* Changes the link color on hover */
+nav ul li a:hover {
+  color: #a55233;
+  /* New color when the link is hovered */
+}
+
+/* Responsive styling for screens with a max width of 768px */
+@media (max-width: 768px) {
+  nav ul li {
+    margin-right: 10px;
+    /* Reduces the space between list items on smaller screens */
+  }
+}

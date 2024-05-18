@@ -1,0 +1,74 @@
+/* BooksPage.css */
+
+/* Add this rule to remove outline box */
+:focus {
+  outline: none;
+  outline-color: #ccc;
+}
+
+.books-container {
+  max-width: 1000px;
+  margin: 70px auto 0;
+  padding: 20px;
+  
+}
+
+.books-container h2 {
+  margin-bottom: 45px;
+  margin-top: -10px;
+  margin-right: 500px;
+  color: #fff;
+}
+
+h2 {
+  color: white;
+  font-size: 34px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  border: 1px solid #000;
+  padding: 10px;
+  
+}
+
+.book-number {
+  color: #fff;
+  font-weight: bold;
+  
+}
+
+.book-number::after {
+  content: '. ';
+}
+
+.book-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.book-link:hover {
+  text-decoration: underline;
+}
+
+.books-container h2 {
+  font-size: 34px;
+  
+}
+
+@media (max-width: 768px) {
+  .books-container {
+    padding: 10px;
+  }
+
+  .book-item {
+    padding: 5px;
+  }
+}
